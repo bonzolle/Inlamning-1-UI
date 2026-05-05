@@ -104,9 +104,33 @@ body {
 
 }
 
+.footermiddle1 {
+    font-size: large;
+    justify-self: center;
+}
+
+.footermiddle2 {
+    font-size: x-large;
+    justify-self: center;
+}
+
+.footerright {
+    justify-self: center;
+}
+
+.footerleft {
+    justify-self: center;
+}
+
 .footer {
+    padding-top: 30px;
     color: white;
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
+    padding-left: 20px;
+}
+
+#tricell_logo {
+    width: 100px;
 }
