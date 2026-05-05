@@ -8,10 +8,6 @@ app.use(express.static('./public'));
 
 // läser in routers
 
-
-
-
-
 app.get('/', function (request, response) {
 
     response.write(readHTML('./masterframe/head.html'))
