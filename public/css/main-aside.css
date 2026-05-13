@@ -1,0 +1,145 @@
+.row-4-wrapper {
+    display: flex;
+    justify-content: space-between; /* Skapar avstånd mellan main och menyn */
+    align-items: flex-start; /* Ser till att båda börjar i toppen av sidan */
+    max-width: 1200px; /* Valfritt: Begränsar den totala bredden */
+}
+
+.grid-emptywhite{
+
+    width: 60px;
+    flex-shrink: 1;
+}
+
+.grid-main {
+    display: flex;
+    padding: 20px;
+    margin-right: 80px;
+}
+
+.main{
+    text-align: left;
+    padding: 16px 30px 16px 0;
+    margin: 0 0 30px 0;
+    min-width: 0;
+    overflow-wrap: break-word;
+    font-size: 10px;
+    font-family: arial;
+    line-height: 1.35;
+
+}
+
+.featuredimage {
+    width: fit-content;
+    justify-self: left;
+    display: block;
+}
+
+.main h1{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: arial;
+    margin: 20px 0 20px 0;
+}
+
+* New aside classes and ids */
+
+a.forgot, a:hover.forgot, a:active.forgot
+{
+    text-decoration: none;
+    color: black;
+}
+
+#menu-grid
+{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+#outer-login-prompt
+{
+    display: grid;
+    grid-template-rows: 100px 400px;
+}
+
+#inner-menu-header
+{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    font-size: 10px;
+}
+
+#inner-menu-form
+{
+    display: grid;
+    align-items: center;
+    grid-template-rows: 60px 60px;
+    padding: 0px 10px;
+}
+
+#inner-menu-buttons
+{
+    padding: 10px;
+    font-size: 12px;
+}
+
+#signin
+{
+    width: 100%;
+    background-color: green;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding: 5px;
+    color: white;
+}
+
+#forgorpassword
+{
+    display: grid;
+    place-items: center;
+    padding: 20px 0px;
+}
+
+.form-text
+{
+    font-size: 12px;
+}
+
+#aside-header
+{
+    background-color: green;
+    padding-left: 20px;
+    color: white;
+    align-content: center;
+}
+
+img.tricell
+{
+    width: 150px;
+    height: auto;
+}
+
+input.login
+{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    color: lightgray;
+}
+
+@media (max-width: 768px) {
+    .row-4-wrapper {
+        flex-direction: column; /* Ändrar från rad (sida vid sida) till kolumn (ovanpå varandra) */
+    }
+
+    .grid-main {
+        margin-right: 0; /* Tar bort den högra marginalen på små skärmar */
+        width: 100%; /* Ser till att den tar upp hela skärmens bredd */
+    }
+
+    #menu-grid {
+        width: 100%; /* Login-menyn tar också upp hela bredden */
+        margin-top: 40px; /* Lägger till lite avstånd mellan main och menyn när de är staplade */
+    }
+}
