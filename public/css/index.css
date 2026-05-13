@@ -29,9 +29,6 @@ body {
     background-image: url(./Header_img_01.jpg);
 }
 
-
-
-
 .breadcrummenu {
     align-content: center;
     justify-content: center;
@@ -46,7 +43,6 @@ body {
     margin-left: 20px;
 
 }
-
 
 .grid-topmenu {
 
@@ -80,12 +76,6 @@ body {
 /* TOP SLUT */
 
 /* MIDDLE START */
-.grid-emptywhite,
-.grid-main {
-
-    background-color: white;
-}
-
 
 .grid-rightmenu {
     background-color: white;
@@ -102,11 +92,4 @@ body {
     grid-column: span 2;
     background-color: black;
 
-}
-
-.footer {
-    color: white;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto;
 }
